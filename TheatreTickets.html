@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wages">
+    <title>Ticket Booking</title>
+    <link href="styles/TTstyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>Theatre Ticket Booking</h1>
+    
+    <div>
+        <label for="showchoice">Show Choice</label>
+        <select id="showchoice" required>
+            <option id="phantom" value="phantom">Phantom of the Opera - £79</option>
+            <option id="hamilton" value="hamilton">Hamilton - £85</option>
+            <option id="lion" value="lion">Lion King - £67</option>
+            <option id="saigon" value="saigon">Miss Saigon - £83</option>
+        </select>
+    </div>
+
+    <div id="notic">
+        <form>
+
+            <h2>How many tickets?</h2>
+
+            <input type="number" id="tickets" name="tickets" min="1" max="20" required><br><br>
+
+            <p1>If more than 20, please call us to make a group booking.</p1>
+
+        </form>
+    </div>
+
+    <div>
+        <label for="ticDel">Ticket Delivery Method</label>
+        <select id="ticDel" required>
+            <option id="etic" value="etic">E-Ticket - Free</option>
+            <option id="boxoff" value="boxoff">Box Office Collection - £1.50</option>
+            <option id="post" value="post">In The Post - £3.99</option>
+        </select>
+    </div>
+
+    <div id="info">
+        <h2>Your Details</h2>
+        <form>
+
+            <label id="details" for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label id="details" for="house">House Name or Number</label>
+            <input id="nameornumber" name="house" required>
+
+            <label id="details" for="street">Street</label>
+            <input type="text" id="street" name="street" required>
+
+            <label id="details" for="town">Town or City</label>
+            <input type="text" id="town" name="town" required>
+
+            <label id="details" for="postcode">PostCode</label>
+            <input id="postcode" name="postcode" required>
+
+        </form>
+
+        <input id="submit" type="submit" value="Submit">
+
+        <p id="output"></p>
+
+    </div>
+
+
+    <script src="scripts/TTmain.js"></script>
+</body>
+
+</html>
